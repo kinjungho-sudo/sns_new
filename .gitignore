@@ -1,0 +1,48 @@
+# Local Codex/runtime state
+.codex-remote-attachments/
+.claude/
+.env
+.env.*
+!.env.example
+
+# Local scratch/export caches
+tmp/
+output/
+outputs/
+videos/
+episode10-hf*/
+
+# Legacy local archive folders kept outside the shared Git workflow
+0617/
+0618/
+0619/
+0620/
+0622/
+0623/
+0624/
+0630/
+0701/
+0702/
+0705/
+0706/
+0714/
+0722/
+carousel-*/
+artifacts/
+
+# Keep the old local carousel archive out of Git; use carousels/shared for shared work.
+carousels/brand-config.json
+carousels/2026/
+!carousels/shared/
+!carousels/shared/**
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.lnk
+*.tmp
+*.log
+temp-*.png
+
+# Local one-off preview
+editorial-tech-samples-contact.png

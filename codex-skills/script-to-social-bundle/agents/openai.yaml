@@ -1,0 +1,4 @@
+interface:
+  display_name: "대본 기반 SNS 콘텐츠 번들"
+  short_description: "대본을 캐러셀과 애니메이션 발표 자료로 한 번에 제작합니다"
+  default_prompt: "Use $script-to-social-bundle to turn this script into a complete social content bundle."

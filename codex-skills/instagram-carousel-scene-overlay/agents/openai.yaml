@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "Instagram Carousel Scene Overlay"
+  short_description: "Premium scene-led social carousel production"
+  default_prompt: "Create this as a premium 4:5 scene-overlay carousel."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Solo Founder Social Series"
+  short_description: "Build bilingual carousel and presentation packages"
+  default_prompt: "Use $ai-solo-founder-social-series to turn this episode brief into a complete Korean and English social carousel package."
