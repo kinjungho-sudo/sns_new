@@ -1,0 +1,4 @@
+interface:
+  display_name: "SNS Automation Carousel (series2)"
+  short_description: "Build CoMindWorks series2 'AI 업무 자동화' Before/After carousel + distribution package from a briefs/series2/*.md brief"
+  default_prompt: "Use $sns-automation-carousel to turn the ready brief in briefs/series2/ into the 7-card carousel and 배포자료 package, following AGENTS.md's series2 section."
