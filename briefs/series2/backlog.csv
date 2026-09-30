@@ -1,5 +1,5 @@
 episode,topic,status,source_confirmed,note
-EP01,회의록 정리,published_to_notion,yes,"1일차 03_회의록정리 - 실제 회의록_양식.docx/프롬프트.txt 확보, Notion 배포 페이지에 이미 반영됨. 카드 제작은 아직."
+EP01,회의록 정리,published,yes,"게시완료 2026-09-30: Instagram(comind_works) https://www.instagram.com/comind_works/p/Dd6Wh1HH9ws/ + LinkedIn(김정호) https://www.linkedin.com/feed/update/urn:li:activity:7511043118688002050/ . 댓글 키워드 '자료' 통일본. Notion 배포 페이지 반영 완료."
 EP02,영수증 사진만 넣으면 지출결의서 완성,in_production,yes,"정호님 지시로 EP2는 예외 진행 - 이번 세션 검수 완료된 '지출결의서' 편으로 확정(기존 '보고서 표준화' 대체). 카드7+배포자료+Notion 반영 완료. 기존 보고서 표준화 주제는 후속 에피소드로 재배치 가능."
 EP03,엉망인 폴더 AI로 정리하기,in_production,yes,"1일차 04_폴더파일정리 - 프롬프트.txt(파일명 규칙+폴더 분류, 승인 후 실행) 확보. Before(뒤섞인 폴더)->After(규칙대로 정리된 폴더) 시각 임팩트 좋음."
 EP04,분기별 매출 데이터 하나로 합치기,in_production,yes,"1일차 05_매출통합 - 프롬프트.txt(4개 분기 엑셀 통합+검증) 확보. Before(따로따로 엑셀 4개)->After(통합 시트+요약) 표 프레임."
