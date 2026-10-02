@@ -31,7 +31,7 @@ if (-not $resolvedCardsDirectory) {
     $failures.Add("Cards directory is missing: $CardsDirectory")
     $cards = @()
 } else {
-    $cards = @(Get-ChildItem -LiteralPath $resolvedCardsDirectory.Path -Filter '*.png' -File | Sort-Object Name)
+    $cards = @(Get-ChildItem -LiteralPath $resolvedCardsDirectory.Path -Filter 'card_*.png' -File | Sort-Object Name)
 }
 
 if ($cards.Count -ne 7) {
