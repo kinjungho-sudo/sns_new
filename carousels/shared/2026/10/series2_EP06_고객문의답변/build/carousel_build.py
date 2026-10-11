@@ -2,6 +2,7 @@
 """EP.06 고객 문의 답변 초안 — 7장 캐러셀 빌드 (크림/러스트·A2Z·Before→After, Parro/핸들/실명 제외)."""
 import asyncio, pathlib, base64
 from playwright.async_api import async_playwright
+from PIL import Image
 
 FONT = pathlib.Path("font.css").read_text(encoding="utf-8")
 
@@ -66,7 +67,7 @@ def frame(inner, pg, tag="AI 업무 자동화", ep="EP.06 · 고객 문의 답�
     {inner}
     </div>
     {sw}
-    <div class="bot"><span class="brand">Co<b>Mind</b>works</span>{pgs}</div>
+    <div class="bot"><span class="brand">Co<b>Mind</b>Works</span>{pgs}</div>
     </div>"""
 
 # Card 1: Cover
@@ -209,6 +210,13 @@ async def main():
         for i, el in enumerate(els, 1):
             await el.screenshot(path=str(outdir / f"card_{i:02d}.png"))
         await b.close()
-    print("done", len(CARDS), "cards ->", outdir.resolve())
+    # 최종 규격 1080x1350으로 다운샘플(2160x2700 → LANCZOS, 크리스프 유지)
+    for i in range(1, len(CARDS) + 1):
+        fp = outdir / f"card_{i:02d}.png"
+        im = Image.open(fp)
+        if im.size != (1080, 1350):
+            im = im.resize((1080, 1350), Image.LANCZOS)
+            im.save(fp)
+    print("done", len(CARDS), "cards (1080x1350) ->", outdir.resolve())
 
 asyncio.run(main())
